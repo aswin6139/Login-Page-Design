@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginIntro">
+
+    <TextView
+        android:textColor="#696969"
+        android:id="@+id/textLoginSubHeader"
+        style="@style/TextAppearance.AppCompat.Subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isn't life a collection of weird quizzes \n with no answer to half the questions"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    #00B0FF-->
+    <TextView
+        android:textColor="#696969"
+        android:id="@+id/textLoginHeader"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Quiz Master"
+        app:layout_constraintBottom_toTopOf="@+id/textLoginSubHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginBottom="8dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toTopOf="@+id/textLoginHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_draw_questions"
+         />
+
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:background="@drawable/btn_primary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Get Started"
+        app:layout_constraintEnd_toEndOf="@+id/textLoginSubHeader"
+        app:layout_constraintStart_toStartOf="@+id/textLoginSubHeader"
+        app:layout_constraintTop_toBottomOf="@+id/textLoginSubHeader" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_wave" />
+</androidx.constraintlayout.widget.ConstraintLayout>
